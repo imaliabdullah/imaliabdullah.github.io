@@ -524,7 +524,7 @@ img{
 }
 
 .skills__pyspark{
-    width: 75%;
+    width: 50%;
 }
 
 .skills__cpp{
@@ -540,7 +540,7 @@ img{
 }
 
 .skills__photoshop{
-    width: 70%;
+    width: 80%;
 }
 
 .skills__indesign{
@@ -548,7 +548,7 @@ img{
 }
 
 .skills__r{
-    width: 70%;
+    width: 50%;
 }
 
 .skills__excel{
@@ -588,7 +588,7 @@ img{
 }
 
 .skills__streamlit{
-    width: 80%;
+    width: 60%;
 }
 
 .skills__pytorch{
@@ -612,15 +612,15 @@ img{
 }
 
 .skills__regression{
-    width: 95%;
+    width: 80%;
 }
 
 .skills__dt{
-    width: 95%;
+    width: 80%;
 }
 
 .skills__clustering{
-    width: 65%;
+    width: 50%;
 }
 
 .skills__gnn{
@@ -632,11 +632,11 @@ img{
 }
 
 .skills__cnn{
-    width: 80%;
+    width: 50%;
 }
 
 .skills__nlp{
-    width: 65%;
+    width: 50%;
 }
 
 .skills__eda{
@@ -644,11 +644,11 @@ img{
 }
 
 .skills__time{
-    width: 65%;
+    width: 40%;
 }
 
 .skills__ensemble{
-    width: 90%;
+    width: 50%;
 }
 
 .skills__mml{
@@ -681,7 +681,7 @@ img{
 }
 
 .skills__lambda{
-    width: 70%;
+    width: 60%;
 }
 
 .skills__bq{
