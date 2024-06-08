@@ -163,5 +163,11 @@ themeButton.addEventListener('click', () => {
 });
 
 // Set the theme based on user preference from local storage
-document.body.classList.add(localStorage.getItem('theme') === 'dark' ? 'dark-theme' : '');
-themeButton.classList.add(localStorage.getItem('theme') === 'dark' ? 'uil-sun' : 'uil-moon');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark' || savedTheme === null) {
+    document.body.classList.add('dark-theme');
+    themeButton.classList.add('uil-sun');
+} else {
+    document.body.classList.remove('dark-theme');
+    themeButton.classList.remove('uil-sun');
+}
