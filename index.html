@@ -132,7 +132,9 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Ali</h1>
+                        <h1 class="home__title">Hi,
+                        <span id="typed-output"></span>    
+                        </h1>
                         <h3 class="home__subtitle">Data Science Intern @ Technocolabs</h3>
                         <p class="home__description">Bio-Medical Engineer | AI/ML Enthusiast
                         </p>
@@ -1275,6 +1277,37 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const text = "I'm Ali";  // The text to be typed
+    let index = 0;
+    let isDeleting = false;
+
+    function typeText() {
+        const outputElement = document.getElementById("typed-output");
+        
+        if (!isDeleting && index < text.length) {
+        // Typing the text
+        outputElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 100);  // Typing speed
+        } else if (isDeleting && index > 0) {
+        // Deleting the text
+        outputElement.innerHTML = text.substring(0, index - 1);
+        index--;
+        setTimeout(typeText, 50);  // Deleting speed
+        } else {
+        // Start typing again after text is fully erased
+        isDeleting = !isDeleting;
+        setTimeout(typeText, isDeleting ? 1000 : 500);  // Delay before restarting
+        }
+    }
+
+    // Start typing when the page loads
+    window.onload = typeText;
+    </script>
+
 </body>
 
 </html>
